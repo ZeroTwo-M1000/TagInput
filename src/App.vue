@@ -14,7 +14,7 @@ import TagInput from "@/components/TagInput.vue"
     @apply flex flex-col items-start space-y-5 p-20;
 
     h1 {
-        @apply text-title text-5xl font-bold;
+        @apply text-5xl font-bold text-title;
     }
 }
 </style>

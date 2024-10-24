@@ -5,6 +5,19 @@ import vue from "@vitejs/plugin-vue"
 
 // https://vite.dev/config/
 export default defineConfig({
+    build: {
+        outDir: "dist",
+        sourcemap: true,
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    if (id.includes("node_modules")) {
+                        return "vendor"
+                    }
+                },
+            },
+        },
+    },
     plugins: [vue()],
     resolve: {
         alias: {
