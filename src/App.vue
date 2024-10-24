@@ -1,7 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TagInput from "@/components/TagInput.vue"
+</script>
 
 <template>
-    <div></div>
+    <div class="app">
+        <h1>Vue Tag Input</h1>
+        <TagInput />
+    </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app {
+    @apply flex flex-col items-start space-y-5 p-20;
+
+    h1 {
+        @apply text-title text-5xl font-bold;
+    }
+}
+</style>
