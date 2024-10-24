@@ -1,5 +1,4 @@
-export const purge = ["./src/**/*.{js,vue}", "./public/index.html"]
-export const darkMode = false
+export const content = ["./src/**/*.{js,vue}", "./public/index.html"]
 export const theme = {
     extend: {
         colors: {
